@@ -6,3 +6,23 @@
 .container {
     margin-bottom: 100px;
 }
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 100vh;
+    }
+
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 100vh;
+    }
+    .header__socials, .scroll__down {
+        display: none;
+    }
+}

@@ -29,3 +29,26 @@ header {
     format("truetype");
 }
 
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px) {
+  .container {
+      /* width: var(--container-width-md); */
+  }
+
+  section {
+      margin-top: 6rem;
+  }
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 768px) {
+  .container {
+      /* width: var(--container-width-sm); */
+  }
+
+  section > h2{
+      margin-top: 2rem;
+  }
+}

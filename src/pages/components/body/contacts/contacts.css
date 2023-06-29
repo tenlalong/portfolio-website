@@ -43,3 +43,23 @@
   color: #fef3d7; /* Change the text color to red upon hovering */
   fill: #fef3d7;
 }
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px) {
+  header {
+      height: 100vh;
+  }
+
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 768px) {
+  header {
+      height: 100vh;
+  }
+  .header__socials, .scroll__down {
+      display: none;
+  }
+}
