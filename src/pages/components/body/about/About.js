@@ -60,8 +60,8 @@ export default function About() {
               <p>Interests</p>
               <p>
                 Software Development, Android Development, Machine Learning,
-              </p>
-              <Embedded>Computer Vision, Artificial Intelligence, Data Science, Embedded Systems, and more!</p>
+              </p> 
+              <p> Computer Vision, Artificial Intelligence, Data Science, Embedded Systems, and more!</p>
             </button>
             <button className="about__card">
               <AiOutlineFileDone className="about__card-icon" />
