@@ -15,7 +15,7 @@ export default function About() {
       <div className="container about__container">
         <div className="about_me-image">
           <div className="about__cards" >
-            <button className="about__card" style={{ marginLeft: '160px' }}>
+            <button className="about__card" >
               <BiBriefcaseAlt2 className="about__card-icon" style={{ marginTop: '20px' }}/>
               <p style={{marginTop: '20px', marginBottom: '0px'}}>Work Experience</p>
               <p class="work_header" style={{marginTop: '0px' , marginBottom: '0px'}}>
