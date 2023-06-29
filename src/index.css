@@ -25,7 +25,7 @@ header {
 
 @font-face {
   font-family: "Times New Roman MT Condensed Bold";
-  src: url("C:\Users\long2\Documents\ReactApp\my-app\src\fonts\Times New Roman MT Condensed Bold.otf")
+  src: url("./fonts/custom_font.otf")
     format("truetype");
 }
 
