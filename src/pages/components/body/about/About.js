@@ -15,6 +15,20 @@ export default function About() {
       <div className="container about__container">
         <div className="about_me-image">
           <div className="about__cards">
+            <div className="about_me-image">
+              <img
+                src={Portrait}
+                alt="me"
+                style={{ marginLeft: "240px" }}
+              ></img>
+            </div>
+            <div className="about_me-image">
+              <img src={Code} alt="code" style={{ marginLeft: "318px" }}></img>
+            </div>
+          </div>
+        </div>
+        <div className="about__content">
+          <div className="about__cards">
             <button className="about__card">
               <BiBriefcaseAlt2
                 className="about__card-icon"
@@ -35,21 +49,6 @@ export default function About() {
                 <p class="location">Toronto, ON</p>
               </div>
             </button>
-
-            <div className="about_me-image">
-              <img
-                src={Portrait}
-                alt="me"
-                style={{ marginLeft: "240px" }}
-              ></img>
-            </div>
-            <div className="about_me-image">
-              <img src={Code} alt="code" style={{ marginLeft: "318px" }}></img>
-            </div>
-          </div>
-        </div>
-        <div className="about__content">
-          <div className="about__cards">
             <button className="about__card">
               <MdSchool className="about__card-icon" />
               <p>Education</p>
