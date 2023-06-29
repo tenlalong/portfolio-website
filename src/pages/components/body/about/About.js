@@ -14,26 +14,38 @@ export default function About() {
 
       <div className="container about__container">
         <div className="about_me-image">
-          <div className="about__cards" >
-            <button className="about__card" >
-              <BiBriefcaseAlt2 className="about__card-icon" style={{ marginTop: '20px' }}/>
-              <p style={{marginTop: '20px', marginBottom: '0px'}}>Work Experience</p>
-              <p class="work_header" style={{marginTop: '0px' , marginBottom: '0px'}}>
+          <div className="about__cards">
+            <button className="about__card">
+              <BiBriefcaseAlt2
+                className="about__card-icon"
+                style={{ marginTop: "20px" }}
+              />
+              <p style={{ marginTop: "20px", marginBottom: "0px" }}>
+                Work Experience
+              </p>
+              <p
+                class="work_header"
+                style={{ marginTop: "0px", marginBottom: "0px" }}
+              >
                 <p class="title">Software Engineer Intern</p>
                 <p class="date"> May 2021 - Jan. 2023</p>
               </p>
-              <div class="work_header" style={{marginTop: '0px'}}>
+              <div class="work_header" style={{ marginTop: "0px" }}>
                 <p class="company"> Assure Global Group</p>
                 <p class="location">Toronto, ON</p>
               </div>
-              
             </button>
-          </div>
-          <div className="about_me-image">
-            <img src={Portrait} alt="me" style={{ marginLeft: "240px" }}></img>
-          </div>
-          <div className="about_me-image">
-            <img src={Code} alt="code" style={{ marginLeft: "318px" }}></img>
+
+            <div className="about_me-image">
+              <img
+                src={Portrait}
+                alt="me"
+                style={{ marginLeft: "240px" }}
+              ></img>
+            </div>
+            <div className="about_me-image">
+              <img src={Code} alt="code" style={{ marginLeft: "318px" }}></img>
+            </div>
           </div>
         </div>
         <div className="about__content">
@@ -62,11 +74,11 @@ export default function About() {
             <button className="about__card">
               <p>
                 I do love coding a lot. I appreciate the fact that I cannot go
-                to sleep without finishing debugging my code. During my free time, I usually work out, read mangas, 
-                or watch anime (rarely nowadays). I am always
-                seeking for new opportunities to learn and grow as a person and
-                as a professional. I also love to take risks. I am currently looking for a new graduate
-                SWE positions.
+                to sleep without finishing debugging my code. During my free
+                time, I usually work out, read mangas, or watch anime (rarely
+                nowadays). I am always seeking for new opportunities to learn
+                and grow as a person and as a professional. I also love to take
+                risks. I am currently looking for a new graduate SWE positions.
               </p>
             </button>
 
