@@ -1,0 +1,32 @@
+
+.headButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.left-button,
+.right-button,
+.mid-button {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #fef3d7;
+  font-family: "Times New Roman MT Condensed Bold";
+  color: #0c0002;
+  border-radius: 7px;
+  border: 2px solid #d3c7c7;
+  outline: none;
+}
+
+.left-button:hover,
+.mid-button:hover,
+.right-button:hover {
+  background-color: #0c0002;
+  color: #fef3d7;
+}

@@ -1,0 +1,45 @@
+.parent_container {
+    width: 1800px; /* Adjust the width as per your preference */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .container.contacts_container {
+    display: grid;
+    gap: 20px;
+  }
+
+  .contacts_options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .option {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fef3d7;
+    padding: 20px;
+    color:#0c0002;
+  }
+
+  .email_icon,
+  .ig_icon,
+  .linkedin_icon {
+    fill: #0c0002;
+  }
+.text {
+  color:#0c0002;
+}
+  .option:hover {
+    background-color: #0c0002;
+  }
+
+.option:hover h4,
+.option:hover h5,
+.option:hover a,
+.option:hover .email_icon,
+.option:hover .linkedin_icon,
+.option:hover .ig_icon {
+  color: #fef3d7; /* Change the text color to red upon hovering */
+  fill: #fef3d7;
+}

@@ -1,0 +1,56 @@
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fef3d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0c0002;
+    padding: 0 20px;
+  }
+
+  .bottom-bar:hover {
+    background: #0c0002;
+  }
+
+  .bottom-bar:hover .current-time,
+  .bottom-bar:hover .custom-text,
+  .bottom-bar:hover .current-date {
+    color: #EBE6E3;
+  }
+  
+  .bottom-bar-left {
+    flex: 1;
+    text-align: left;
+  }
+
+  .bottom-bar-right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .current-time,
+  .current-date {
+    font-size: 16px;
+    color: black;
+  }
+
+  .bottom-bar-middle {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .custom-text {
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: black
+  }

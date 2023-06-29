@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Body from "./pages/components/body/Body";
+import "./pages/components/header/Introduction";
+import Introduction from "./pages/components/header/Introduction";
+import React, {useRef, useState} from "react";
+
 
 function App() {
+
+  const contactsRef = useRef(null);
+  const [scrollToContacts, setScrollToContacts] = useState(false);
+
+  const handleContactClick = () => {
+    setScrollToContacts(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Introduction handleContactClick={handleContactClick} />
+      <Body scrollToContacts={scrollToContacts} contactsRef={contactsRef} />
     </div>
   );
 }

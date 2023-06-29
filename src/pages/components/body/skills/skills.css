@@ -1,0 +1,116 @@
+.parent_container {
+  width: 1800px; /* Adjust the width as per your preference */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.container.skill_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.skill_front,
+.skill_back,
+.skill_py {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fef3d7;
+  padding: 20px;
+  color:#0c0002;
+}
+
+.title,
+.text-light {
+  color: #0c0002;
+}
+
+.title-skill {
+  color: #fef3d7;
+}
+
+.skill_front:hover,
+.skill_back:hover,
+.skill_py:hover {
+  background-color: #0c0002;
+}
+
+.skill_front:hover h3,
+.skill_front:hover h4,
+.skill_front:hover small,
+.skill_back:hover h3,
+.skill_back:hover h4,
+.skill_back:hover small,
+.skill_py:hover h3,
+.skill_py:hover h4,
+.skill_py:hover small {
+  color: #EBE6E3; 
+  fill: #EBE6E3;
+}
+
+.skill_front:hover .skill_details_icon,
+.skill_back:hover .skill_details_icon,
+.skill_py:hover .skill_details_icon {
+  fill: #EBE6E3; /* Change the fill color of the SVG icon to black upon hovering */
+}
+
+.front_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  justify-items: center;
+}
+
+.front_skill_details {
+  display: flex;
+  align-items: center;
+}
+
+.skill_details_icon {
+  margin-right: 10px;
+  fill: #0c0002
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+
+@media screen and (max-width: 1024px) {
+  .work__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container > div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .experience__content {
+    padding: 1rem;
+  }
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+
+@media screen and (max-width: 768px) {
+  .work__header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container {
+    gap: 1rem;
+  }
+
+  .experience__container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .experience__content {
+    grid-template-columns: 1fr;
+  }
+}

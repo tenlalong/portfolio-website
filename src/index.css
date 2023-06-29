@@ -1,13 +1,31 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Times New Roman MT Condensed Bold";
+  letter-spacing: 1px;
+  font-size: 25px;
+  line-height: 0.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./background/vhs.gif);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+header {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+* {
+  color: #fef3d7;
+}
+
+@font-face {
+  font-family: "Times New Roman MT Condensed Bold";
+  src: url("C:\Users\long2\Documents\ReactApp\my-app\src\fonts\Times New Roman MT Condensed Bold.otf")
+    format("truetype");
+}
+

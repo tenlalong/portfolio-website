@@ -1,0 +1,8 @@
+.body {
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    margin-bottom: 150px; /* Add margin at the bottom to create space */
+}
+
+.container {
+    margin-bottom: 100px;
+}
