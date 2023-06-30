@@ -21,9 +21,9 @@ export default function BottomBar() {
             <div className="bottom-bar-left">
                 <div className="current-time">{currentTime}</div>
             </div>
-            <div className="bottom-bar-middle">
+            {/* <div className="bottom-bar-middle">
                 <div className='custom-text'>{customText}</div>
-            </div>
+            </div> */}
             <div className="bottom-bar-right">
                 <div className="current-date">{new Date().toLocaleDateString()}</div>
             </div>

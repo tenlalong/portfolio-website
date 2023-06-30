@@ -136,50 +136,28 @@ button {
     align-items: center;
 }
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+/* Small devices */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 1024px) {
-    .about__container {
-        grid-template-columns: 1fr;
-        gap: 0;
+    button {
+        width: 50%;
     }
 
     .about__me {
+      width: 90%;
+    }
+  
+    .about__cards {
         width: 50%;
-        margin: 2rem auto 4rem;
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
-    
-    .about__content p {
-        margin: 1rem 0 1.5rem;
-    }
-
-    .about__cards {
-        width: 100%;
-    }
-
-    .about__text {
-    width: 100%;
-}
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-
-@media screen and (max-width: 768px) {
-   .about__me {
-        width: 65%;
-        margin: 0 auto 4rem;
-    }
-
-    .about__cards {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
+  
     .about__content {
-        text-align: center;
+      text-align: center;
     }
-
-    .about__content p {
-        margin: 1.5rem 0;
+  
+    .about__card {
+      width: 100;
     }
 }

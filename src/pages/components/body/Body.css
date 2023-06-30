@@ -1,28 +1,19 @@
 .body {
-    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
-    margin-bottom: 150px; /* Add margin at the bottom to create space */
+    min-height: 100vh;
+    margin-bottom: 150px;
 }
 
 .container {
     margin-bottom: 100px;
 }
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-
-@media screen and (max-width: 1024px) {
-    header {
-        height: 100vh;
-    }
-
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-
+/* Media Queries (Small Devices) */
 @media screen and (max-width: 768px) {
-    header {
-        height: 100vh;
+    .body {
+        margin-bottom: 50px;
     }
-    .header__socials, .scroll__down {
-        display: none;
+
+    .container {
+        margin-bottom: 50px;
     }
 }

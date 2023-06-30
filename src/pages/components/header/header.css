@@ -31,22 +31,16 @@
   color: #fef3d7;
 }
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-
+/* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
-  header {
-      height: 100vh;
+  .buttons-container {
+    grid-template-columns: 1fr; /* Change the grid to a single column */
+    grid-gap: 20px; /* Adjust the grid gap as needed */
   }
 
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-
-@media screen and (max-width: 768px) {
-  header {
-      height: 100vh;
-  }
-  .header__socials, .scroll__down {
-      display: none;
+  .left-button,
+  .right-button,
+  .mid-button {
+    width: 100%; /* Set the buttons to 100% width to fill the container */
   }
 }

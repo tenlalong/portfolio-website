@@ -44,22 +44,15 @@
   fill: #fef3d7;
 }
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 
-@media screen and (max-width: 1024px) {
-  header {
-      height: 100vh;
-  }
-
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-
+/* Media Queries (Small Devices) */
 @media screen and (max-width: 768px) {
-  header {
-      height: 100vh;
+  .parent_container {
+      width: 100%;
+      padding: 0 20px;
   }
-  .header__socials, .scroll__down {
-      display: none;
+
+  .contacts_options {
+      grid-template-columns: 1fr;
   }
 }

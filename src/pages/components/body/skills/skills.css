@@ -72,45 +72,14 @@
   fill: #0c0002
 }
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-
-@media screen and (max-width: 1024px) {
-  .work__container {
-    grid-template-columns: 1fr;
-  }
-
-  .experience__container {
-    grid-template-columns: 1fr;
-  }
-
-  .experience__container > div {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .experience__content {
-    padding: 1rem;
-  }
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-
+/* Media Queries (Small Devices) */
 @media screen and (max-width: 768px) {
-  .work__header {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .experience__container {
-    gap: 1rem;
-  }
-
-  .experience__container > div {
+  .parent_container {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 0 20px;
   }
 
-  .experience__content {
+  .container.skill_container {
     grid-template-columns: 1fr;
   }
 }

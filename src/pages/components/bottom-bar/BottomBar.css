@@ -55,50 +55,39 @@
     color: black
   }
 
-  /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-
+  /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
-  .about__container {
-      grid-template-columns: 1fr;
-      gap: 0;
+  .bottom-bar {
+    padding: 0 10px;
   }
 
-  .about__me {
-      width: 50%;
-      margin: 2rem auto 4rem;
-  }
-  
-  .about__content p {
-      margin: 1rem 0 1.5rem;
+  .bottom-bar-left,
+  .bottom-bar-right {
+    flex: none;
+    width: 50%;
+    text-align: center;
   }
 
-  .about__cards {
-      width: 100%;
+  .bottom-bar-left {
+    order: 1;
   }
 
-  .about__text {
-  width: 100%;
-}
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-
-@media screen and (max-width: 768px) {
- .about__me {
-      width: 65%;
-      margin: 0 auto 4rem;
+  .bottom-bar-middle {
+    display: none;
   }
 
-  .about__cards {
-      grid-template-columns: 1fr;
-      gap: 1rem;
+  .bottom-bar-right {
+    order: 2;
+    margin-right: 20px;
   }
 
-  .about__content {
-      text-align: center;
+  .current-time,
+  .custom-text,
+  .current-date {
+    font-size: 14px;
   }
 
-  .about__content p {
-      margin: 1.5rem 0;
+  .current-date {
+    
   }
 }

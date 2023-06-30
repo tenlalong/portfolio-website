@@ -29,26 +29,22 @@ header {
     format("truetype");
 }
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-
-@media screen and (max-width: 1024px) {
-  .container {
-      /* width: var(--container-width-md); */
-  }
-
-  section {
-      margin-top: 6rem;
-  }
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-
+/* Media Query for Small Devices */
 @media screen and (max-width: 768px) {
-  .container {
-      /* width: var(--container-width-sm); */
+  .about__me {
+    width: 90%;
   }
 
-  section > h2{
-      margin-top: 2rem;
+  .about__cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__card {
+    width: 100;
   }
 }
