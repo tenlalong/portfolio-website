@@ -15,7 +15,7 @@ Currently looking for Software Engineer opportunities.`;
     let clearIntervalId;
 
     const animateName = () => {
-      if (index < fullName.length -1) {
+      if (index < fullName.length - 1) {
         setName((prevName) => prevName + fullName[index]);
         index++;
       } else {
@@ -43,8 +43,34 @@ Currently looking for Software Engineer opportunities.`;
     };
   }, []);
 
-  const lines = name.split("\n").map((line, index) => <div key={index} style={{ marginBottom: "50px", fontSize: "30px"}}>
-    {line}</div>);
+  // const lines = name.split("\n").map((line, index) => (
+  //   <div key={index} style={{ marginBottom: "50px", fontSize: "30px" }}>
+  //     {line}
+  //   </div>
+  // ));
 
-  return <div style={{ whiteSpace: "pre-wrap" }}>{lines}</div>;
+  const lines = name.split("\n").map((line, index) => {
+    let fontSize = "30px"; // Default font size
+    if (window.innerWidth <= 1024) {
+      fontSize = "20px"; // Font size for medium devices
+    }
+    if (window.innerWidth <= 768) {
+      fontSize = "15px"; // Font size for small devices
+    }
+    if (window.innerWidth <= 390) {
+      fontSize = "10px"; // Font size for extra small devices
+    }
+
+    return (
+      <div key={index} style={{ marginBottom: "50px", fontSize }}>
+        {line}
+      </div>
+    );
+  });
+
+  return (
+    <div className="name-animation-container">
+      <div style={{ whiteSpace: "pre-wrap" }}>{lines}</div>
+    </div>
+  );
 }

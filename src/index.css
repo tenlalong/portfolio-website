@@ -6,7 +6,7 @@ body {
   line-height: 0.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(./background/vhs.gif);
+  background: url(./background/overlay.gif);
 }
 
 code {
@@ -45,6 +45,6 @@ header {
   }
 
   .about__card {
-    width: 100;
+    width: 100px;
   }
 }

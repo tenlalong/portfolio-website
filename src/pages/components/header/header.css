@@ -1,3 +1,9 @@
+.name-animation-container {
+  overflow: hidden; /* Hide any overflowing text */
+  white-space: nowrap; /* Ensure the text stays on a single line */
+  text-overflow: ellipsis; /* Add an ellipsis (...) if the text exceeds the container */
+  max-width: 100%; 
+}
 
 .headButtons {
   display: flex;
@@ -36,6 +42,46 @@
   .buttons-container {
     grid-template-columns: 1fr; /* Change the grid to a single column */
     grid-gap: 20px; /* Adjust the grid gap as needed */
+  }
+
+  .name-animation-container {
+    font-size: 25px; /* Adjust the font size for medium devices */
+  }
+
+  .left-button,
+  .right-button,
+  .mid-button {
+    width: 100%; /* Set the buttons to 100% width to fill the container */
+  }
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 768px) {
+  .buttons-container {
+    grid-template-columns: 1fr; /* Change the grid to a single column */
+    grid-gap: 10px; /* Adjust the grid gap as needed */
+  }
+
+  .name-animation-container {
+    font-size: 15px; /* Adjust the font size for medium devices */
+  }
+
+  .left-button,
+  .right-button,
+  .mid-button {
+    width: 100%; /* Set the buttons to 100% width to fill the container */
+  }
+}
+
+/* Media Queries (Extra Small Devices) */
+@media screen and (max-width: 390px) {
+  .buttons-container {
+    grid-template-columns: 1fr; /* Change the grid to a single column */
+    grid-gap: 5px; /* Adjust the grid gap as needed */
+  }
+
+  .name-animation-container {
+    font-size: 5px; /* Adjust the font size for medium devices */
   }
 
   .left-button,
