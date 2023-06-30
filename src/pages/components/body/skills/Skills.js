@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <h2 className="title-skill">My Skills</h2>
-      <div className="parent_container">
+      <div className="parent__container">
         <div className="container skill_container">
           <div className="skill_front">
             <h3 className="title">Front-End Development</h3>

@@ -17,3 +17,25 @@
         margin-bottom: 50px;
     }
 }
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 390px) {
+    .body {
+        margin-bottom: 50px;
+    }
+
+    .container {
+        margin-bottom: 50px;
+    }
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 1500px) {
+    .body {
+        margin-bottom: 50px;
+    }
+
+    .container {
+        margin-bottom: 50px;
+    }
+}

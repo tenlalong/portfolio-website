@@ -1,5 +1,5 @@
-.parent_container {
-  width: 1800px; /* Adjust the width as per your preference */
+.parent__container {
+  width: 100%; /* Adjust the width as per your preference */
   margin: 0 auto; /* Center the container horizontally */
 }
 
@@ -12,6 +12,7 @@
 .skill_front,
 .skill_back,
 .skill_py {
+  display: grid;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fef3d7;
@@ -74,10 +75,35 @@
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 768px) {
-  .parent_container {
-    width: 100%;
+  .parent__container {
+    width: 80%;
     padding: 0 20px;
   }
+
+  .container.skill_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 390px) {
+  .parent_container {
+    width: 80%;
+    padding: 0 20px;
+  }
+
+  .container.skill_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 1500px) {
+  .parent__container {
+    width: 80%;
+    padding: 0 20px;
+  }
+
 
   .container.skill_container {
     grid-template-columns: 1fr;

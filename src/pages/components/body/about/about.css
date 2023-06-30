@@ -138,6 +138,7 @@ button {
 
 @media screen and (max-width: 768px) {
     .about__container {
+      width: 100%;
       grid-template-columns: 1fr;
       gap: 1rem;
     }
@@ -185,6 +186,8 @@ button {
 
   @media screen and (max-width: 390px) {
     .about__container {
+      width: 50%;
+      height: auto;
       grid-template-columns: 1fr;
       gap: 1rem;
     }
@@ -225,9 +228,59 @@ button {
       text-align: center;
       margin-top: 2rem;
     }
+
+    
   
     button {
-      width: 80%;
-      max-width: 300px;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    .about__container {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .about__me {
+      width: 100%;
+      margin-top: 0 auto;
+    }
+  
+    .about__me-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    }
+
+    .about__me-image img {
+      width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      justify-items: center;
+    }
+  
+    .about__cards {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  
+    .about__card {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+      }
+  
+    .about__content {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  
+    button {
+      width: 50%;
     }
   }
