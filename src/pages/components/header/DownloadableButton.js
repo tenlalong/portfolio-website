@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from "../../../uploads/Long_Nguyen_Resume_Dev_NEW_Jun30.pdf";
+import Resume from "../../../uploads/Long_Nguyen_Resume_NEW_Dev_Jun30.pdf";
 import WorkExample from "../../../uploads/Work Example June 20.pdf";
 import "./header.css";
 
