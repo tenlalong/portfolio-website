@@ -16,8 +16,14 @@ Currently looking for Software Engineer opportunities.`;
 
     const animateName = () => {
       if (index < fullName.length - 1) {
-        setName((prevName) => prevName + fullName[index]);
-        index++;
+        if (fullName[index] === " " && fullName[index + 1] === " ") {
+          // Handle consecutive spaces by replacing them with a single space
+          setName((prevName) => prevName + " ");
+          index++;
+        } else {
+          setName((prevName) => prevName + fullName[index]);
+          index++;
+        }
       } else {
         clearInterval(intervalId);
         setTimeout(clearName, 1000); // Wait for 1 second before clearing the name
