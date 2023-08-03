@@ -7,7 +7,8 @@ export default function NameAnimation() {
 Newly graduated Computer Engineering student
 York University
 Toronto, ON
-Currently looking for Software Engineer opportunities.`;
+Currently looking for Software Engineer opportunities.
+I am willing to relocate.`;
 
   useEffect(() => {
     let index = 0;
