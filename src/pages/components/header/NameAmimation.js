@@ -24,7 +24,7 @@ I am willing to relocate.`;
       }
     };
 
-    intervalId = setInterval(animateName, 100); // Adjust the interval duration for the desired speed
+    intervalId = setInterval(animateName, 70); // Adjust the interval duration for the desired speed
 
     return () => {
       clearInterval(intervalId);
