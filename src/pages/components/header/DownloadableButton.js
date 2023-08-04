@@ -1,5 +1,6 @@
 import React from "react";
 import Resume from "../../../uploads/Long_Nguyen_Resume_Dev.pdf";
+import DataResume from "../../../uploads/Long_Nguyen_Resume_Data.pdf";
 import WorkExample from "../../../uploads/Work Example June 20.pdf";
 import "./header.css";
 
@@ -8,6 +9,13 @@ export default function DownloadableButton({handleContactClick}) {
     const link = document.createElement("a");
     link.href = Resume;
     link.download = "Long_Nguyen_Resume.pdf";
+    link.click();
+  };
+
+  const handleDataDownload = () => {
+    const link = document.createElement("a");
+    link.href = DataResume;
+    link.download = "Long_Nguyen_Resume_Data.pdf";
     link.click();
   };
 
@@ -26,7 +34,10 @@ export default function DownloadableButton({handleContactClick}) {
     <div className="headButtons">
       <div className="buttons_container">
         <button className="left-button" onClick={handleResumeDownload}>
-          My Resume
+          SWE Resume
+        </button>
+        <button className="left-button" onClick={handleDataDownload}>
+          Data Resume
         </button>
         <button className="mid-button" onClick={handleDownload}>
           Work Examples
