@@ -71,6 +71,7 @@
   .buttons-container {
     grid-template-columns: 1fr; /* Change the grid to a single column */
     grid-gap: 10px; /* Adjust the grid gap as needed */
+    width: 50%;
   }
 
   .name-animation-container.text {
@@ -80,7 +81,8 @@
   .left-button,
   .right-button,
   .mid-button {
-    width: 100%; /* Set the buttons to 100% width to fill the container */
+    width: 50%; /* Set the buttons to 100% width to fill the container */
+    font-size: 0.7rem;
   }
 }
 
@@ -93,6 +95,7 @@
   .buttons-container {
     grid-template-columns: 1fr; /* Change the grid to a single column */
     grid-gap: 5px; /* Adjust the grid gap as needed */
+    width: 50%;
   }
 
   .name-animation-container {
@@ -104,5 +107,6 @@
   .right-button,
   .mid-button {
     width: 50%; /* Set the buttons to 100% width to fill the container */
+    font-size: 0.7rem;
   }
 }
