@@ -7,6 +7,11 @@
   align-items: center;
 }
 
+.header-left{
+  align-items: center;
+  justify-content: center;
+}
+
 .headButtons {
   display: flex;
   justify-content: center;
@@ -80,7 +85,6 @@
 
   .name-animation-container {
     font-size: 0.5rem; /* Adjust the font size for medium devices */
-    max-width: 390px;
   }
 
   .left-button,
@@ -93,23 +97,19 @@
 
 /* Media Queries (Extra Small Devices) */
 @media screen and (max-width: 390px) {
-  .header {
-    align-items: center;
-    justify-content: center;
-  }
   .test_intro {
     align-items: center;
     justify-items: center;
   }
+
   .buttons-container {
     grid-template-columns: 1fr; /* Change the grid to a single column */
-    grid-gap: 5px; /* Adjust the grid gap as needed */
+    grid-gap: 10px; /* Adjust the grid gap as needed */
     width: 50%;
   }
 
   .name-animation-container {
     font-size: 0.5rem; /* Adjust the font size for medium devices */
-    max-width: 390px;
   }
 
   .left-button,
@@ -117,5 +117,8 @@
   .mid-button {
     width: 50%; /* Set the buttons to 100% width to fill the container */
     font-size: 0.7rem;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
   }
 }

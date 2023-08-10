@@ -141,6 +141,7 @@ button {
       width: 100%;
       grid-template-columns: 1fr;
       gap: 1rem;
+      max-width: 768px
     }
   
     .about__me {
@@ -149,11 +150,11 @@ button {
     }
   
     .about__me-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 0;
     }
 
     .about__me-image img {
@@ -190,6 +191,7 @@ button {
       height: auto;
       grid-template-columns: 1fr;
       gap: 1rem;
+      max-width: 390px;
     }
   
     .about__me {
@@ -203,6 +205,7 @@ button {
       align-items: center;
       text-align: center;
       margin-top: 0;
+      max-width: 0.8rem;
     }
   
     .about__me-image img {
@@ -242,6 +245,7 @@ button {
       width: 100%;
       grid-template-columns: 1fr;
       gap: 1rem;
+      max-width: 1500px;
     }
   
     .about__me {
