@@ -26,19 +26,10 @@ export default function About() {
         <div className="about__content">
           <div className="about__cards">
             <button className="about__card">
-              <BiBriefcaseAlt2
-                className="about__card-icon"
-                style={{ marginTop: "20px" }}
-              />
-              <p style={{ marginTop: "20px", marginBottom: "0px" }}>
-                Work Experience
-              </p>
-              <p
-                class="work_header"
-                style={{ marginTop: "0px", marginBottom: "0px" }}
-              >
+              <BiBriefcaseAlt2 className="about__card-icon" style={{ marginTop: "20px" }}/>
+              <p style={{ marginTop: "20px", marginBottom: "0px" }}>Work Experience</p>
+              <p class="work_header" style={{ marginTop: "0px", marginBottom: "0px" }}>
                 <p class="title">Software Engineer Intern: May 2021 - Jan. 2023</p>
-                {/* <p class="date"> May 2021 - Jan. 2023</p> */}
               </p>
               <div class="work_header" style={{ marginTop: "0px" }}>
                 <p class="company"> Assure Global Group: Toronto, ON</p>

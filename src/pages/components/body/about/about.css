@@ -224,7 +224,7 @@ button {
     }
   
     .about__card {
-      width: 100%;
+      width: 80%;
       max-width: none;
       height: auto;
       padding: 1.5rem;
@@ -233,11 +233,19 @@ button {
     .about__content {
       text-align: center;
       margin-top: 2rem;
+      max-width: 390px;
     }
   
     button {
       width: 100%;
       max-width: 100%;
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+    }
+
+    p {
+      font-size: 0.7rem;
     }
   }
 
