@@ -16,16 +16,10 @@ export default function About() {
         <div className="about_me-image">
           <div className="about__cards">
             <div className="about_me-image">
-              <img
-                src={Portrait}
-                alt="me"
-                // style={{ marginLeft: "240px" }}
-              ></img>
+              <img src={Portrait} alt="me"></img>
             </div>
             <div className="about_me-image">
-              <img src={Code} alt="code" 
-              // style={{ marginLeft: "318px" }}
-              ></img>
+              <img src={Code} alt="code" ></img>
             </div>
           </div>
         </div>

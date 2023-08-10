@@ -91,6 +91,10 @@
 
 /* Media Queries (Extra Small Devices) */
 @media screen and (max-width: 390px) {
+  .header {
+    align-items: center;
+    justify-content: center;
+  }
   .test_intro {
     align-items: center;
     justify-items: center;
