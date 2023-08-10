@@ -1,7 +1,7 @@
 import React from "react";
 import Resume from "../../../uploads/Long_Nguyen_Resume_Dev.pdf";
 import DataResume from "../../../uploads/Long_Nguyen_Resume_Data.pdf";
-import WorkExample from "../../../uploads/Work Example June 20.pdf";
+import WorkExample from "../../../uploads/Works.pdf";
 import "./header.css";
 
 export default function DownloadableButton({handleContactClick}) {

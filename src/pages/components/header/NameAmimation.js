@@ -7,13 +7,12 @@ export default function NameAnimation() {
 Newly graduated Computer Engineering student
 York University
 Toronto, ON
-Currently looking for Software Engineer or Data Engineer opportunities.
+Seeking for Software or Data Engineer opportunities.
 I am willing to relocate.`;
 
   useEffect(() => {
     let index = 0;
     let intervalId;
-    let clearIntervalId;
 
     const animateName = () => {
       if (index < fullName.length - 1) {
@@ -52,7 +51,7 @@ I am willing to relocate.`;
 
   return (
     <div className="name-animation-container">
-      <div style={{ whiteSpace: "pre-wrap" }}>{lines}</div>
+      <div className="text" style={{ whiteSpace: "pre-wrap" }}>{lines}</div>
     </div>
   );
 }

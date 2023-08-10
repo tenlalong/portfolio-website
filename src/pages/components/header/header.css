@@ -28,6 +28,7 @@
   border-radius: 7px;
   border: 2px solid #d3c7c7;
   outline: none;
+  margin-bottom: 20px;
 }
 
 .left-button:hover,
@@ -72,8 +73,8 @@
     grid-gap: 10px; /* Adjust the grid gap as needed */
   }
 
-  .name-animation-container {
-    font-size: 15px; /* Adjust the font size for medium devices */
+  .name-animation-container.text {
+    font-size: 0.5rem; /* Adjust the font size for medium devices */
   }
 
   .left-button,
@@ -95,7 +96,8 @@
   }
 
   .name-animation-container {
-    font-size: 5px; /* Adjust the font size for medium devices */
+    font-size: 0.5rem; /* Adjust the font size for medium devices */
+    max-width: 390px;
   }
 
   .left-button,
