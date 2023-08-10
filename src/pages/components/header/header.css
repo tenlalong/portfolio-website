@@ -103,6 +103,6 @@
   .left-button,
   .right-button,
   .mid-button {
-    width: 100%; /* Set the buttons to 100% width to fill the container */
+    width: 50%; /* Set the buttons to 100% width to fill the container */
   }
 }
