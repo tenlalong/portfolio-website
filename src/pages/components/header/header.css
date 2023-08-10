@@ -14,6 +14,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
 }
 
 .left-button,
@@ -74,8 +76,9 @@
     width: 50%;
   }
 
-  .name-animation-container.text {
+  .name-animation-container {
     font-size: 0.5rem; /* Adjust the font size for medium devices */
+    max-width: 390px;
   }
 
   .left-button,
