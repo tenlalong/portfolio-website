@@ -13,7 +13,7 @@ export default function About() {
       <h3>About Me</h3>
 
       <div className="container about__container">
-        <div className="about_me-image">
+        <div className="about_me-container">
           <div className="about__cards">
             <div className="about_me-image">
               <img src={Portrait} alt="me"></img>

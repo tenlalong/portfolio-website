@@ -31,7 +31,7 @@ p {
     margin: 0 auto;
 }
 
-.about__me-image {
+.about__me-container {
     width: 100%;
     border-radius: 2rem;
     overflow: hidden;
@@ -42,10 +42,6 @@ p {
     grid-template-columns: 35% 50%;
     gap: 15%;
     color: #0c0002;
-}
-
-.about__me-image:hover {
-    transform: rotate(0deg);
 }
 
 .about__cards {
@@ -136,6 +132,11 @@ button {
     align-items: center;
 }
 
+.about__cards img {
+  width: 100%;
+  height: auto; 
+}
+
 @media screen and (max-width: 768px) {
     .about__container {
       width: 100%;
@@ -163,7 +164,7 @@ button {
     }
   
     .about__cards {
-      width: 100%;
+      width: 70%;
       grid-template-columns: 1fr;
     }
   
@@ -197,24 +198,26 @@ button {
     .about__me {
       width: 100%;
       margin: 0 auto;
+      max-width: 390px;
     }
   
-    .about__me-image {
+    .about__me-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       margin-top: 0;
       max-width: 0.8rem;
+      max-width: 390px;
     }
   
     .about__me-image img {
       margin: 0 auto;
       align-items: center;
-      max-width: 100%;
-      height: auto;
+      height: 50%;
+      width: 50%
     }
-  
+
     .about__cards {
       width: 100%;
       grid-template-columns: 1fr;
@@ -231,8 +234,6 @@ button {
       text-align: center;
       margin-top: 2rem;
     }
-
-    
   
     button {
       width: 100%;
