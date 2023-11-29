@@ -14,7 +14,7 @@ export default function About() {
 
       <div className="container about__container">
         <div className="about_me-container">
-          <div className="about__cards">
+          <div className="about__cards_img">
             <div className="about_me-image">
               <img src={Portrait} alt="me"></img>
             </div>

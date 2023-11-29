@@ -210,6 +210,10 @@ button {
       max-width: 0.8rem;
       max-width: 390px;
     }
+
+    .about__cards_img {
+      width: 50%;
+    }
   
     .about__me-image img {
       margin: 0 auto;
