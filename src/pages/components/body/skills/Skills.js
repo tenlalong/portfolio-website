@@ -106,7 +106,7 @@ export default function Skills() {
           </div>
 
           <div className="skill_py">
-            <h3 className="title">Python Frameworks/Libraries</h3>
+            <h3 className="title">Frameworks/Libraries</h3>
             <div className="front_content">
               <article className="front_skill_details">
                 <BsPatchCheckFill className="skill_details_icon" />
