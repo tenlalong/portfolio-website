@@ -1,9 +1,9 @@
-@media (max-width:768px){
-    .current-date{
-    text-align:right !important;
+@media screen and (max-width: 1024px){
+    .current-date {
+    text-align: right !important;
+    margin-right: 40px !important;
     }
     }
-    
 .body {
     min-height: 100vh;
     margin-bottom: 150px;
