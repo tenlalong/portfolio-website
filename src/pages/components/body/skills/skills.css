@@ -1,3 +1,15 @@
+@media (max-width:768px){
+  .skill_front{
+  margin-bottom:20px !important;
+  }
+  .skill_back{
+  margin-bottom:20px !important;
+  }
+  .skill_py{
+  margin-bottom:20px !important;
+  }
+  }
+
 @media screen and (max-width: 768px){
   .skill_back, .skill_front, .skill_py{
   display:block !important;
@@ -6,7 +18,7 @@
   display:block !important;
   }
   }
-  
+
 .parent__container {
   width: 100%; /* Adjust the width as per your preference */
   margin: 0 auto; /* Center the container horizontally */
