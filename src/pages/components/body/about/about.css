@@ -2,6 +2,12 @@
   .about_me-image:last-child{
   margin-left:0px !important;
   }
+
+  .about__cards img {
+    width: 250px !important;
+    margin: auto !important;
+    }
+    
   }
   
 .work_header{
