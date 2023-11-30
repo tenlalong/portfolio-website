@@ -50,7 +50,7 @@ export default function Contacts() {
         </div>
       </div>
 
-      <h2>Hope you have a great day!</h2>
+      <h2>Have a great day!</h2>
     </section>
   );
 }
