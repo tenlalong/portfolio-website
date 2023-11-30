@@ -10,6 +10,15 @@
   }
   }
 
+  @media (max-width:768px){
+    .title{
+    font-size:20px !important;
+    }
+    .text-light{
+    font-size:16px !important;
+    }
+    }
+    
 @media screen and (max-width: 768px){
   .skill_back, .skill_front, .skill_py{
   display:block !important;
