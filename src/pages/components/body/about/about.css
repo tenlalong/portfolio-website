@@ -1,3 +1,9 @@
+@media screen and (max-width: 768px){
+  .about_me-image:last-child{
+  margin-left:0px !important;
+  }
+  }
+  
 .work_header{
     display: flex;
     justify-content: space-between;
