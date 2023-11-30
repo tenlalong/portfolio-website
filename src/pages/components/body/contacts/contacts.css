@@ -3,6 +3,12 @@
   margin: 0 auto; /* Center the container horizontally */
 }
 
+@media (max-width:768px){
+  .text{
+  font-size:18px !important;
+  }
+  }
+
 .container.contacts_container {
   display: grid;
   gap: 20px;
