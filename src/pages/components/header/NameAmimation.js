@@ -8,7 +8,7 @@ Full Stack Engineer
 Computer Engineering @ York University '23
 Toronto, ON
 Seeking for Software or Data Engineer opportunities.
-I am willing to relocate.`;
+Je parle francais.`;
 
   useEffect(() => {
     let index = 0;

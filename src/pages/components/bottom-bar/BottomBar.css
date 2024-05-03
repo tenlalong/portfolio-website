@@ -78,7 +78,10 @@
 
   .bottom-bar-right {
     order: 2;
-    
+  }
+
+  .current-date {
+    padding-right: 40px;
   }
 
   .current-time,
