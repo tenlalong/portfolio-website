@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 export default function NameAnimation() {
   const [name, setName] = useState("");
   const fullName = `
-Hi there! My name is Long Nguyen
+ Hi there! My name is Long Nguyen
 Full Stack Engineer
 Computer Engineering @ York University '23
 Toronto, ON
