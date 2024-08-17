@@ -25,6 +25,9 @@ export default function Body({ scrollToContacts, contactsRef }) {
           <Contacts />
         </div>
       </div>
+      <div>
+        <p> </p>
+      </div>
       <div className="container">
         <BottomBar />
       </div>
