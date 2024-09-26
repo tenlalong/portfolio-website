@@ -32,6 +32,17 @@ export default function About() {
                 <p class="title">Full Stack Developer:  Sep. 2023 - Apr. 2024</p>
               </p>
               <div class="work_header" style={{ marginTop: "0px" }}>
+                <p class="company"> DeficienSEE:   Missisauga, ON</p>
+                {/* <p class="location">Toronto, ON</p> */}
+              </div>
+            </button>
+          <button className="about__card">
+              <BiBriefcaseAlt2 className="about__card-icon" style={{ marginTop: "20px" }}/>
+              <p style={{ marginTop: "20px", marginBottom: "0px" }}>Work Experience</p>
+              <p class="work_header" style={{ marginTop: "0px", marginBottom: "0px" }}>
+                <p class="title">Full Stack Developer:  Sep. 2023 - Apr. 2024</p>
+              </p>
+              <div class="work_header" style={{ marginTop: "0px" }}>
                 <p class="company"> Collab Dentistry Inc.:   Concord, ON</p>
                 {/* <p class="location">Toronto, ON</p> */}
               </div>
@@ -73,7 +84,7 @@ export default function About() {
                 time, I usually work out, read mangas, or watch anime (rarely
                 nowadays). I am always seeking for new opportunities to learn
                 and grow as a person and as a professional. I also love to take
-                risks. I am currently looking for a new graduate SWE positions.
+                risks. I am currently looking for a Software Engineer positions.
               </p>
             </button>
 
