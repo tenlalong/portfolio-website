@@ -29,7 +29,7 @@ export default function About() {
               <BiBriefcaseAlt2 className="about__card-icon" style={{ marginTop: "20px" }}/>
               <p style={{ marginTop: "20px", marginBottom: "0px" }}>Work Experience</p>
               <p class="work_header" style={{ marginTop: "0px", marginBottom: "0px" }}>
-                <p class="title">Full Stack Developer:  Sep. 2023 - Apr. 2024</p>
+                <p class="title">Full Stack Developer:  Apr. 2024 - Oct. 2024</p>
               </p>
               <div class="work_header" style={{ marginTop: "0px" }}>
                 <p class="company"> DeficienSEE:   Missisauga, ON</p>
