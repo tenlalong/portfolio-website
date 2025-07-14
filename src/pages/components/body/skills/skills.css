@@ -1,41 +1,46 @@
-@media (max-width:768px){
-  .skill_front{
-  margin-bottom:20px !important;
-  }
-  .skill_back{
-  margin-bottom:20px !important;
-  }
-  .skill_py{
-  margin-bottom:20px !important;
-  }
-  }
+/* skills.css */
 
-  @media (max-width:768px){
-    .title{
-    font-size:20px !important;
-    }
-    .text-light{
-    font-size:16px !important;
-    }
-    }
-    
-@media screen and (max-width: 768px){
-  .skill_back, .skill_front, .skill_py{
-  display:block !important;
+@media (max-width: 768px) {
+  .skill_front {
+    margin-bottom: 20px !important;
   }
-  .container.skill_container{
-  display:block !important;
+  .skill_back {
+    margin-bottom: 20px !important;
   }
+  .skill_py {
+    margin-bottom: 20px !important;
   }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px !important;
+  }
+  .text-light {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill_back,
+  .skill_front,
+  .skill_py {
+    display: block !important;
+  }
+  .container.skill_container {
+    display: block !important;
+  }
+}
 
 .parent__container {
-  width: 100%; /* Adjust the width as per your preference */
-  margin: 0 auto; /* Center the container horizontally */
+  width: 100%; /* Full width */
+  margin: 0 auto;
 }
 
 .container.skill_container {
+  width: 100%; /* Full width */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
   gap: 20px;
 }
 
@@ -47,7 +52,7 @@
   border-radius: 5px;
   background-color: #fef3d7;
   padding: 20px;
-  color:#0c0002;
+  color: #0c0002;
 }
 
 .title,
@@ -74,22 +79,22 @@
 .skill_py:hover h3,
 .skill_py:hover h4,
 .skill_py:hover small {
-  color: #EBE6E3; 
-  fill: #EBE6E3;
+  color: #ebe6e3;
+  fill: #ebe6e3;
 }
 
 .skill_front:hover .skill_details_icon,
 .skill_back:hover .skill_details_icon,
 .skill_py:hover .skill_details_icon {
-  fill: #EBE6E3; /* Change the fill color of the SVG icon to black upon hovering */
+  fill: #ebe6e3;
 }
 
 .front_content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  justify-content: center; /* Add this line */
-  align-items: center; /* Add this line */
+  justify-content: center;
+  align-items: center;
   justify-items: center;
 }
 
@@ -100,42 +105,25 @@
 
 .skill_details_icon {
   margin-right: 10px;
-  fill: #0c0002
+  fill: #0c0002;
 }
 
-/* Media Queries (Small Devices) */
+/* Media Queries for different screen sizes */
+@media screen and (min-width: 1025px) {
+  .container.skill_container {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container.skill_container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .parent__container {
-    width: 80%;
-    padding: 0 20px;
-  }
-
   .container.skill_container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Media Queries (Small Devices) */
-@media screen and (max-width: 390px) {
-  .parent_container {
-    width: 80%;
-    padding: 0 20px;
-  }
-
-  .container.skill_container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Media Queries (Small Devices) */
-@media screen and (max-width: 1500px) {
-  .parent__container {
-    width: 80%;
-    padding: 0 20px;
-  }
-
-
-  .container.skill_container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 column for small screens */
   }
 }

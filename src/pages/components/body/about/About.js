@@ -14,14 +14,14 @@ export default function About() {
 
       <div className="container about__container">
         <div className="about_me-container">
-          <div className="about__cards">
-            <div className="about_me-image">
-              <img src={Portrait} alt="me"></img>
-            </div>
-            <div className="about_me-image">
-              <img src={Code} alt="code" ></img>
-            </div>
-          </div>
+          <div className="about__images">
+  <div className="about_me-image">
+    <img src={Portrait} alt="me" />
+  </div>
+  <div className="about_me-image">
+    <img src={Code} alt="code" />
+  </div>
+</div>
         </div>
         <div className="about__content">
           <div className="about__cards">

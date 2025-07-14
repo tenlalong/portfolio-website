@@ -1,13 +1,16 @@
+/* contacts.css */
+
 .parent_container {
-  width: 1800px; /* Adjust the width as per your preference */
-  margin: 0 auto; /* Center the container horizontally */
+  width: 100%; /* Full width */
+  max-width: 1800px; /* Optional: cap width but allow full stretch up to 1800px */
+  margin: 0 auto;
 }
 
-@media (max-width:768px){
-  .text{
-  font-size:18px !important;
+@media (max-width: 768px) {
+  .text {
+    font-size: 18px !important;
   }
-  }
+}
 
 .container.contacts_container {
   display: grid;
@@ -16,7 +19,7 @@
 
 .contacts_options {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
   gap: 20px;
 }
 
@@ -33,9 +36,11 @@
 .linkedin_icon {
   fill: #0c0002;
 }
+
 .text {
   color: #0c0002;
 }
+
 .option:hover {
   background-color: #0c0002;
 }
@@ -46,30 +51,28 @@
 .option:hover .email_icon,
 .option:hover .linkedin_icon,
 .option:hover .ig_icon {
-  color: #fef3d7; /* Change the text color to red upon hovering */
+  color: #fef3d7;
   fill: #fef3d7;
 }
 
-/* Media Queries (Small Devices) */
-@media screen and (max-width: 768px) {
+/* Media Queries for different screen sizes */
+@media screen and (min-width: 1025px) {
   .parent_container {
     width: 100%;
-    padding: 0 20px;
   }
-
   .contacts_options {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
   }
 }
 
-/* Media Queries (Small Devices) */
 @media screen and (max-width: 1500px) {
-  .parent_container {
-    width: 80%;
-    padding: 0 20px;
-  }
-
   .contacts_options {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts_options {
+    grid-template-columns: 1fr; /* 1 column for small screens */
   }
 }

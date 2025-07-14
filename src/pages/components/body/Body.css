@@ -1,52 +1,45 @@
-@media screen and (max-width: 1024px){
-    .current-date {
-    text-align: right !important;
-    margin-right: 40px !important;
-    }
+/* Body.css */
 
-    .current-time {
-        text-align: left !important;
-        margin-left: 40px !important;
-        }
-    }
 .body {
-    min-height: 100vh;
-    margin-bottom: 150px;
+  min-height: 100vh;
+  margin-bottom: 150px;
 }
 
 .container {
-    margin-bottom: 100px;
+  width: 100%; /* Ensure full width */
+  margin: 0 auto; /* Center content if needed */
+  padding: 0; /* Remove padding that might limit width */
 }
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 768px) {
-    .body {
-        margin-bottom: 50px;
-    }
+  .body {
+    margin-bottom: 50px;
+  }
 
-    .container {
-        margin-bottom: 50px;
-    }
+  .container {
+    margin-bottom: 50px;
+  }
 }
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 390px) {
-    .body {
-        margin-bottom: 50px;
-    }
+  .body {
+    margin-bottom: 50px;
+  }
 
-    .container {
-        margin-bottom: 50px;
-    }
+  .container {
+    margin-bottom: 50px;
+  }
 }
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 1500px) {
-    .body {
-        margin-bottom: 50px;
-    }
+  .body {
+    margin-bottom: 50px;
+  }
 
-    .container {
-        margin-bottom: 50px;
-    }
+  .container {
+    margin-bottom: 50px;
+  }
 }

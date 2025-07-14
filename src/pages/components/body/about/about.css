@@ -3,7 +3,7 @@
     margin-left: 0px !important;
   }
 
-  .about__cards img {
+  .about__images img {
     width: 250px !important;
     margin: auto !important;
   }
@@ -16,6 +16,7 @@
 }
 
 .about__container {
+  width: 100%;
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
@@ -28,7 +29,7 @@ p {
 }
 
 .about__me {
-  width: 80%;
+  width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
@@ -49,24 +50,35 @@ p {
   transform: rotate(10deg);
   transition: var(--transition);
   margin-top: 35px;
-  display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #0c0002;
 }
 
-.about__cards {
-  width: auto;
+.about__images {
   display: flex;
-  grid-template-columns: repeat(1, 1fr);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about_me-image {
+  width: 80%;
+}
+
+.about_me-image img {
+  width: 100%;
+  height: auto;
+}
+
+.about__cards {
+  width: 100%;
+  display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 35px;
-}
-
-.about_me-image:last-child {
-  margin-left: 30px;
-  margin-top: 35px;
 }
 
 .about__card {
@@ -75,7 +87,8 @@ p {
   border-radius: 1rem;
   padding: 2rem;
   height: 350px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   text-align: center;
   transition: var(--transition);
   background-color: #fef3d7;
@@ -85,6 +98,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .about__card:hover {
@@ -119,8 +133,10 @@ h3 {
 }
 
 .about__content {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__content p {
@@ -149,10 +165,8 @@ button {
   height: auto;
 }
 
-/* Adjusted media query for medium screens and below */
 @media screen and (max-width: 1024px) {
   .about__container {
-    width: 100%;
     grid-template-columns: 1fr;
     gap: 1rem;
     max-width: 1024px;
@@ -199,126 +213,9 @@ button {
   }
 }
 
-/* Media query for small devices */
-@media screen and (max-width: 768px) {
-  .about__container {
-    width: 100%;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    max-width: 768px;
-  }
-
-  .about__me {
-    width: 100%;
-    margin-top: 0 auto;
-  }
-
-  .about__me-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 0;
-  }
-
-  .about__me-image img {
-    margin: 0 auto;
-    align-items: center;
-  }
-
-  .about__cards {
-    width: 70%;
-    grid-template-columns: 1fr;
-  }
-
-  .about__card {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    padding: 1.5rem;
-  }
-
-  .about__content {
-    text-align: center;
-    margin-top: 2rem;
-  }
-
-  button {
-    width: 50%;
-  }
-}
-
-/* Media query for extra small devices */
-@media screen and (max-width: 390px) {
-  .about__container {
-    width: 50%;
-    height: auto;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    max-width: 390px;
-  }
-
-  .about__me {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 390px;
-  }
-
-  .about__me-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 0;
-    max-width: 0.8rem;
-    max-width: 390px;
-  }
-
-  .about__me-image img {
-    margin: 0 auto;
-    align-items: center;
-    height: 50%;
-    width: 50%;
-  }
-
-  .about__cards {
-    width: 100%;
-    grid-template-columns: 1fr;
-  }
-
-  .about__card {
-    width: 80%;
-    max-width: none;
-    height: auto;
-    padding: 1.5rem;
-  }
-
-  .about__content {
-    text-align: center;
-    margin-top: 2rem;
-    max-width: 390px;
-  }
-
-  button {
-    width: 100%;
-    max-width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  p {
-    font-size: 0.7rem;
-  }
-}
-
-/* New media query for larger screens to ensure full width */
 @media screen and (min-width: 1025px) {
-  .about__me {
+  .about__container {
     width: 100%;
-  }
-
-  .about__content {
-    width: 100%;
+    grid-template-columns: 35% 50%;
   }
 }
